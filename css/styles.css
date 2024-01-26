@@ -263,8 +263,10 @@ width: 100%;
 
 .team {
     background:#F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team-title {
@@ -275,12 +277,13 @@ width: 100%;
     line-height: 1.11em;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
+    margin-bottom: 32px;
 }
 
 .team-list {
-    display: flex;
-    gap: 24px;  
+    /* display: flex;
+    gap: 24px;   */
 }
 
 .worker-container {
@@ -365,7 +368,7 @@ width: 100%;
 
 .portfolio {
     /* padding: 120px 0 120px 0; */
-    padding-top: 96px;
+    padding: 96px 0;
 }
 
 .portfolio-title {
@@ -835,11 +838,62 @@ fill: #FFFFFF;
         max-width: 736px;
     }
 
+    /* TEAM */
+
+    .team-list {
+        width: 552px;
+        display: flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        gap: 24px;   
+    }
+
+    .team-item {
+        width: 264px;
+        width: calc((100% -24px) / 2);
+    }
+
+    /* PORTFOLIO */
     .portfolio-list {
     width: 736px;
     flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 72px 24px;
+    }
+
+    .portfolio-item {
+    width: 356px;
+    width: calc((100% - 24px) / 2); 
+    }
+
+    .portfolio-img {
+    width: 356px;
+    height: 300px;
     }
 }
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .portfolio {
+    padding: 120px 0 120px 0;
+    }
+
+    .portfolio-list {
+    width: 1128px;
+    gap: 48px 24px; 
+    }
+
+    .portfolio-item {
+    width: 360px;
+    width: calc((100% - 24px * 2) / 3); 
+    }
+
+    .portfolio-img {
+    width: 360px;
+    }
+}
+    

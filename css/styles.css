@@ -262,11 +262,13 @@ width: 100%;
 }
 
 .team {
+    width: 288px;
     background:#F4F4FD;
     /* padding-top: 120px;
     padding-bottom: 120px; */
     padding-top: 96px;
     padding-bottom: 96px;
+    margin: 0 auto;
 }
 
 .team-title {
@@ -282,8 +284,10 @@ width: 100%;
 }
 
 .team-list {
-    /* display: flex;
-    gap: 24px;   */
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px;   */
+    gap: 72px;
 }
 
 .worker-container {
@@ -383,11 +387,12 @@ width: 100%;
 }
 
 .portfolio-list {
-    /* width: 1128px;
-    flex-shrink: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px; */
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+    /* flex-wrap: wrap;
+    gap: 48px 24px;  */
 }
 
 .portfolio-item {
@@ -398,7 +403,6 @@ width: 100%;
     border: 1px solid #e7e9fc;
     border-top: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 48px;
 }
 
 .portfolio-item:hover {
@@ -838,38 +842,37 @@ fill: #FFFFFF;
         max-width: 736px;
     }
 
-    /* TEAM */
+    /* ----------TEAM---------- */
+
+    .team {
+        width: 100%;
+    }
+
+    .team-title {
+        margin-bottom: 72px;
+    }
 
     .team-list {
-        width: 552px;
-        display: flex;
-        flex-shrink: 0;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;   
+        justify-content: center;
+        gap: 64px 24px;   
     }
 
     .team-item {
-        width: 264px;
         width: calc((100% -24px) / 2);
     }
 
-    /* PORTFOLIO */
+    /* ----------PORTFOLIO---------- */
+    
     .portfolio-list {
-    width: 736px;
-    flex-shrink: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
     }
 
     .portfolio-item {
-    width: 356px;
-    width: calc((100% - 24px) / 2); 
-    }
-
-    .portfolio-img {
-    width: 356px;
-    height: 300px;
+        width: calc((100% - 24px) / 2); 
     }
 }
 
@@ -877,6 +880,20 @@ fill: #FFFFFF;
     .container {
         max-width: 1440px;
     }
+
+    /* ----------TEAM---------- */
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;  
+    }
+
+    /* ----------PORTFOLIO---------- */
 
     .portfolio {
     padding: 120px 0 120px 0;

@@ -382,15 +382,11 @@ img {
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    /* font-size: 56px; */
     font-size: 36px;
     font-weight: 700;
-    /* line-height: 1.07em; */
     line-height: 1.11;
     letter-spacing: 0.02em;  
-    /* max-width: 496px;  */
-    min-width: 288px;
-    /* margin: 0 auto 48px; */
+    max-width: 216px; 
     margin: 0 auto 72px;
 }
 
@@ -424,7 +420,7 @@ img {
 .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/tablet/office-bg-tablet-min.jpg);
+            url(../images/office-bg-tablet-min.jpg);
         padding: 112px 0;
     }
 
@@ -434,7 +430,7 @@ img {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/tablet/office-bg-tablet@2-min.jpg);
+                url(../images/office-bg-tablet@2-min.jpg);
         }
     }
 
@@ -442,7 +438,7 @@ img {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
-        max-width: 0 auto 36px;
+        margin-bottom: 36px;
     }
 }
 
@@ -450,7 +446,7 @@ img {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
-            url(../images/desktop/office-bg-desktop.jpg);
+            url(../images/office-bg-desktop.jpg);
         padding: 188px 0;
     }
 
@@ -460,12 +456,12 @@ img {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/desktop/office-bg-desktop@2-min.jpg);
+                url(../images/office-bg-desktop@2-min.jpg);
         }
     }
 
     .hero-title {
-        max-width: 0 auto 48px;
+        margin-bottom: 48px;
     }
 }
 
@@ -721,7 +717,7 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.portfolio-item:active {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -750,11 +746,11 @@ img {
     transform: translateY(0%);
 }
 
-.portfolio-img {
+/* .portfolio-img {
     margin: 0 auto;
     width: 288px;
     height: 280px;
-}
+} */
 
 .portfolio-item-title {
     color: #2E2F42;
@@ -794,17 +790,22 @@ img {
     }
 
     .portfolio-list {
-        width: 1128px;
         gap: 48px 24px;
     }
 
     .portfolio-item {
         width: 360px;
-        width: calc((100% - 24px * 2) / 3);
+        width: calc((100% - 48px) / 3);
     }
 
-    .portfolio-img {
-        width: 360px;
+    .portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
+
+    .portfolio-item:hover .card-overlay-text {
+        transform: translateY(0);
     }
 }
 

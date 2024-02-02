@@ -234,6 +234,12 @@ img {
     pointer-events: none;
 }
 
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
 .mob-menu-close-btn {
     position: absolute;
     top: 24px;

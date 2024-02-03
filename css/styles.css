@@ -184,14 +184,6 @@ img {
     .address-link:focus {
         color: #404BBF;
     }
-
-    .open-menu-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    line-height: 0;
-    padding: 0;
-    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -215,6 +207,14 @@ img {
     .open-menu-btn {
         display: none;
     }
+}
+
+.open-menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+    padding: 0;
 }
 
 /* ----------MOBILE-MENU---------- */
@@ -547,6 +547,12 @@ img {
     text-align: center;
     align-self: stretch;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .features-item-title {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -905,6 +911,7 @@ img {
 .logo-bottom {
     display: inline-block;
     margin: 0 auto 16px;
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
